@@ -5,40 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikasi Alarm Kegiatan</title>
     <link rel="stylesheet" href="style.css">
-       
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json">
-    
-    <!-- Apple Touch Icon untuk iOS -->
-    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
-    
-    <!-- Meta untuk iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Alarm Kegiatan">
-    
-    <!-- Meta untuk theme color -->
-    <meta name="theme-color" content="#667eea">
 </head>
 <body>
-    <!-- ... konten yang sama seperti sebelumnya ... -->
-    
-    <script src="script.js"></script>
-    
-    <!-- Daftarkan Service Worker -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js')
-                    .then(registration => {
-                        console.log('ServiceWorker registered: ', registration);
-                    })
-                    .catch(error => {
-                        console.log('ServiceWorker registration failed: ', error);
-                    });
-            });
-        }
-    </script>
     <div class="container">
         <h1>⏰ Alarm Kegiatan Harian</h1>
         
